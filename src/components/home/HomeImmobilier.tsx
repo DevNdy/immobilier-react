@@ -42,6 +42,10 @@ const HomeImmobilierStyled = styled.div`
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   .imgNotVisit {

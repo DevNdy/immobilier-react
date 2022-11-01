@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HomeImmobilier from "../components/home/HomeImmobilier";
 import HomeWelcome from "../components/home/HomeWelcome";
 import { theme } from "../theme/theme";
+import ButtonsActions from "../ui-reusable/ButtonsActions";
 
 const Home = () => {
   const [visit, setVisit] = useState(false);
@@ -16,6 +17,7 @@ const Home = () => {
     <HomeStyled>
       <HomeWelcome />
       <HomeImmobilier onClick={handleClick} visit={visit} close={() => setVisit(!setVisit)} />
+      <ButtonsActions />
     </HomeStyled>
   );
 };
