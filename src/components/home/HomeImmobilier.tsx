@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import imgImo from "../../assets/img/immo.png";
+import { theme } from "../../theme/theme";
+import Spline from "@splinetool/react-spline";
 
 interface HomeImmobilierProps {
   onClick: () => void;
@@ -11,14 +13,12 @@ interface HomeImmobilierProps {
 const HomeImmobilier: React.FC<HomeImmobilierProps> = ({ onClick, visit, close }) => {
   return (
     <HomeImmobilierStyled>
-      <button onClick={onClick}>Visiter l'appartement</button>
+      <button onClick={onClick}>Regarder la maquette</button>
       <img className={`${visit ? "imgVisit" : "imgNotVisit"}`} src={imgImo} alt="immobilier 3d" />
-      <iframe
+      <Spline
         className={`${visit === true ? "visit" : "notVisit"}`}
-        src="https://my.spline.design/untitled-8892733e47c2413865675d8b592905d7/"
-        width="100%"
-        height="100%"
-      ></iframe>
+        scene="https://prod.spline.design/IP63riCTSyu5Vrxd/scene.splinecode"
+      />
       {visit ? <i onClick={close} className="fa-solid fa-xmark iconClose"></i> : <></>}
     </HomeImmobilierStyled>
   );
@@ -31,6 +31,19 @@ const HomeImmobilierStyled = styled.div`
   align-items: center;
   justify-content: center;
 
+  button {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: ${theme.colors.primaryColor};
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
   .imgNotVisit {
     transition: 3s;
     min-height: 400px;
@@ -40,7 +53,7 @@ const HomeImmobilierStyled = styled.div`
 
   .imgVisit {
     transition: 3s;
-    min-height: 200px;
+    min-height: 400px;
     z-index: 0;
     opacity: 0;
   }
@@ -68,7 +81,7 @@ const HomeImmobilierStyled = styled.div`
     bottom: 0;
     background-color: white;
     height: 99vh;
-    width: 99vw;
+    min-width: 99vw;
     z-index: 10;
     opacity: 1;
   }
