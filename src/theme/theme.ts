@@ -4,8 +4,6 @@ const colors = {
   fond: "#D6CFCB",
 };
 
-//#706677 levender old
-
 export const theme = {
   colors,
 };

@@ -6,7 +6,7 @@ const HomeWelcome = () => {
     <HomeWelcomeStyled>
       <h1>Bienvenue sur Immobilier 3D</h1>
       <p>
-        "Aillez un aperçu de votre future bien immobilier, en avant première grâce à notre système
+        "Aillez un aperçu de votre future bien immobilier, en avant première grâce à nos maquettes
         3d réalisé avec Spline."
       </p>
       <span>Création de @DevNdy</span>
