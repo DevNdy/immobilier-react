@@ -95,7 +95,7 @@ const HomeImmobilierStyled = styled.div`
   .iconClose {
     position: absolute;
     top: 50px;
-    right: 50px;
+    left: 50px;
     font-size: 30px;
     color: black;
     z-index: 40;

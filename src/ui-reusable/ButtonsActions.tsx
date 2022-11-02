@@ -18,15 +18,14 @@ const ButtonsActions: React.FC<ButtonsActionsProps> = ({ onClickContact, onClick
 
 const ButtonsActionsStyled = styled.div`
   height: 60px;
-  width: 220px;
+  width: 96%;
   position: absolute;
-  background-color: white;
   bottom: 20px;
   right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   i {
     height: 40px;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ContactWindow from "../components/contact/ContactWindow";
 import HomeImmobilier from "../components/home/HomeImmobilier";
 import HomeWelcome from "../components/home/HomeWelcome";
+import InfosWindow from "../components/infos/InfosWindow";
 import { theme } from "../theme/theme";
 import ButtonsActions from "../ui-reusable/ButtonsActions";
 
@@ -25,6 +26,7 @@ const Home = () => {
         onClickInfos={() => setInfos(!infos)}
       />
       {contact ? <ContactWindow /> : <></>}
+      {infos ? <InfosWindow /> : <></>}
     </HomeStyled>
   );
 };
