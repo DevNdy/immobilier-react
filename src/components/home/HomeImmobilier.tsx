@@ -51,6 +51,7 @@ const HomeImmobilierStyled = styled.div`
   .imgNotVisit {
     transition: 3s;
     min-height: 400px;
+    margin-bottom: 40px;
     z-index: 0;
     opacity: 1;
   }
@@ -58,6 +59,7 @@ const HomeImmobilierStyled = styled.div`
   .imgVisit {
     transition: 3s;
     min-height: 400px;
+    margin-bottom: 40px;
     z-index: 0;
     opacity: 0;
   }
@@ -66,7 +68,7 @@ const HomeImmobilierStyled = styled.div`
     transition: 1s;
     position: absolute;
     top: 0;
-    left: -100vw;
+    left: -250vw;
     border: none;
     background-color: white;
     height: 99vh;

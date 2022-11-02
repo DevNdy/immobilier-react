@@ -2,26 +2,31 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../theme/theme";
 
-const ButtonsActions = () => {
+interface ButtonsActionsProps {
+  onClickContact: () => void;
+  onClickInfos: () => void;
+}
+
+const ButtonsActions: React.FC<ButtonsActionsProps> = ({ onClickContact, onClickInfos }) => {
   return (
     <ButtonsActionsStyled>
-      <i className="fa-sharp fa-solid fa-clipboard-list"></i>
-      <i className="fa-solid fa-phone"></i>
+      <i onClick={onClickInfos} className="fa-sharp fa-solid fa-clipboard-list"></i>
+      <i onClick={onClickContact} className="fa-solid fa-phone"></i>
     </ButtonsActionsStyled>
   );
 };
 
 const ButtonsActionsStyled = styled.div`
   height: 60px;
-  width: 200px;
+  width: 220px;
   position: absolute;
+  background-color: white;
   bottom: 20px;
   right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  z-index: 50;
 
   i {
     height: 40px;
@@ -37,6 +42,7 @@ const ButtonsActionsStyled = styled.div`
     justify-content: center;
     margin-right: 10px;
     cursor: pointer;
+    z-index: 50;
 
     &:hover {
       opacity: 0.7;
