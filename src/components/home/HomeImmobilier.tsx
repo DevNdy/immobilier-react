@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgImo from "../../assets/img/immo.png";
+import imgImo from "../../assets/img/first.png";
 import { theme } from "../../theme/theme";
 import Spline from "@splinetool/react-spline";
 
@@ -42,11 +42,16 @@ const HomeImmobilierStyled = styled.div`
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   .imgNotVisit {
     transition: 3s;
     min-height: 400px;
+    margin-bottom: 40px;
     z-index: 0;
     opacity: 1;
   }
@@ -54,6 +59,7 @@ const HomeImmobilierStyled = styled.div`
   .imgVisit {
     transition: 3s;
     min-height: 400px;
+    margin-bottom: 40px;
     z-index: 0;
     opacity: 0;
   }
@@ -62,7 +68,7 @@ const HomeImmobilierStyled = styled.div`
     transition: 1s;
     position: absolute;
     top: 0;
-    left: -100vw;
+    left: -250vw;
     border: none;
     background-color: white;
     height: 99vh;
@@ -89,11 +95,36 @@ const HomeImmobilierStyled = styled.div`
   .iconClose {
     position: absolute;
     top: 50px;
-    right: 50px;
+    left: 50px;
     font-size: 30px;
     color: black;
     z-index: 40;
     cursor: pointer;
+  }
+
+  @media (max-width: 599px) {
+    margin-top: 30px;
+
+    .imgNotVisit {
+      max-height: 100px;
+      max-width: 380px;
+    }
+
+    .imgVisit {
+      height: 150px;
+      width: 380px;
+      transition: 0.3s;
+    }
+
+    .notVisit {
+      max-height: 79vh;
+      max-width: 99vw;
+    }
+
+    .visit {
+      max-height: 90vh;
+      max-width: 99vw;
+    }
   }
 `;
 
