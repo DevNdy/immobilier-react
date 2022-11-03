@@ -39,8 +39,8 @@ const HomeStyled = styled.div`
   align-items: center;
   justify-content: center;
 
-  iframe {
-    height: 700px;
+  @media (max-width: 599px) {
+    height: 100vh;
   }
 `;
 

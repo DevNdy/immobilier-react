@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgImo from "../../assets/img/immo.png";
+import imgImo from "../../assets/img/first.png";
 import { theme } from "../../theme/theme";
 import Spline from "@splinetool/react-spline";
 
@@ -100,6 +100,31 @@ const HomeImmobilierStyled = styled.div`
     color: black;
     z-index: 40;
     cursor: pointer;
+  }
+
+  @media (max-width: 599px) {
+    margin-top: 30px;
+
+    .imgNotVisit {
+      max-height: 100px;
+      max-width: 380px;
+    }
+
+    .imgVisit {
+      height: 150px;
+      width: 380px;
+      transition: 0.3s;
+    }
+
+    .notVisit {
+      max-height: 79vh;
+      max-width: 99vw;
+    }
+
+    .visit {
+      max-height: 90vh;
+      max-width: 99vw;
+    }
   }
 `;
 

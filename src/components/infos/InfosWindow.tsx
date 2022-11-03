@@ -62,6 +62,20 @@ const InfosWindowStyled = styled.div`
       color: #e3e3e3;
     }
   }
+
+  @media (max-width: 599px) {
+    bottom: 255px;
+    height: 480px;
+    left: 20%;
+
+    h4 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 export default InfosWindow;

@@ -35,6 +35,23 @@ const HomeWelcomeStyled = styled.div`
     font-size: 14px;
     opacity: 0.6;
   }
+
+  @media (max-width: 599px) {
+    margin-top: 30px;
+
+    h1 {
+      font-size: 23px;
+    }
+
+    p {
+      width: 340px;
+      font-size: 15px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
 `;
 
 export default HomeWelcome;

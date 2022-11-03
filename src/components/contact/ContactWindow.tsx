@@ -52,6 +52,20 @@ const ContactWindowStyled = styled.div`
       font-weight: 300;
     }
   }
+
+  @media (max-width: 599px) {
+    height: 230px;
+    left: 20%;
+    bottom: 10px;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 export default ContactWindow;
