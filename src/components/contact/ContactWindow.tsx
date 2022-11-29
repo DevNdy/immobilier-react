@@ -7,13 +7,13 @@ const ContactWindow = () => {
     <ContactWindowStyled>
       <h4>Immmo3d</h4>
       <p>
-        Téléphone: <span>05.54.54.54.54</span>
+        Téléphone: <span>06.41.98.17.08</span>
       </p>
       <p>
         Email: <span>developpeur.ndy@gmail.com</span>
       </p>
       <p>
-        Adresse agence: <span>Avenue de toulouse 31100</span>
+        Adresse agence: <span>TOULOUSE - Haute-Garonne</span>
       </p>
     </ContactWindowStyled>
   );
